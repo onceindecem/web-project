@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TM84737769
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(/qna2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        p{
+            color: black;
+        }
+        #yes {
+            position: absolute;
+            top: 70%;
+            left: 35%;
+        }
+        #no {
+            position: absolute;
+            top: 70%;
+            left: 55%;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="centerscreen">
+        
+        <p>
+            รูบิคที่ต้องทำให้แต่ละหน้ามีสีเดียวกัน <br>
+คุณเล่นรูบิคเป็นไหม ? 
+ 
+        </p>
+    </div>
+    <button onclick="Q23yes()"  class="next3" id="yes"> เป็น </button>
+    <button onclick="Q23no()"  class="next3" id="no">ไม่เป็น</button>
+    <script>
+        function Q23yes() {
+            var Q23 = "เป็น";
+            sessionStorage.setItem('q23',Q23);
+
+            location.replace('/page47.html');
+        }
+        function Q23no() {
+            var Q23 = "ไม่เป็น";
+            sessionStorage.setItem('q23',Q23);
+
+            location.replace('/page48.html');
+        }
+    </script>
+</body>
+
+</html>
