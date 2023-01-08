@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TM84737769
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(/qna.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h2{
+            color: black;
+            margin: 0%;
+            padding: 0%;
+            position: absolute;
+            text-align: center;
+            left: 40%;
+            top: 15%;
+        }
+        p{
+            color: black;
+        }
+        #Q1yes {
+            position: absolute;
+            top: 70%;
+            left: 35%;
+        }
+        #Q1no {
+            position: absolute;
+            top: 70%;
+            left: 55%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="topic">
+        แบบสอบถาม
+    </h2>
+    <div class="centerscreen">
+        
+        <p>
+            ต้องมีคนคอยเตือนย้ำเรื่อง เช่น เรื่องนัด มีอาการลืมนัดบ่อยๆ
+        </p>
+    </div>
+    <button onclick="Q1yes()" value="ใช่" class="next3" id="Q1yes"> ใช่ </button>
+    <button onclick="Q1no()" value="ไม่ใช่" class="next3" id="Q1no">ไม่ใช่</button>
+    <script>
+        function Q1yes() {
+            var Q1 = "ใช่";
+            sessionStorage.setItem('q1',Q1);
+
+            location.replace('/page6.html');
+        }
+        function Q1no() {
+            var Q1 = "ไม่ใช่";
+            sessionStorage.setItem('q1',Q1);
+
+            location.replace('/page6.html');
+        }
+    </script>
+</body>
+
+</html>

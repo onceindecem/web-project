@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TM84737769
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(/qna2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        p{
+            color: black;
+        }
+        #yes {
+            position: absolute;
+            top: 70%;
+            left: 35%;
+        }
+        #no {
+            position: absolute;
+            top: 70%;
+            left: 55%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centerscreen">
+        
+        <p>
+            ด้วยนิสัยหลงๆ ลืมๆ นี้ <br>
+ทำให้Deadstinyชอบวางของอยู่ผิดที่เสมอเลย <br>
+แล้วคุณล่ะ เป็นบ้างไหมนะ ? 
+
+
+        </p>
+    </div>
+    <button onclick="Q14yes()" class="next3" id="yes">เป็น</button>
+    <button onclick="Q14no()" class="next3" id="no">ไม่เป็น</button>
+    <script>
+        function Q14yes() {
+            var Q14 = "เป็น";
+            sessionStorage.setItem('q14',Q14);
+
+            location.replace('/page32.html');
+        }
+        function Q14no() {
+            var Q14 = "ไม่เป็น";
+            sessionStorage.setItem('q14',Q14);
+
+            location.replace('/page32.html');
+        }
+    </script>
+</body>
+
+</html>

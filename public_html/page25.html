@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TM84737769
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background-image: url(/qna2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #always {
+            position: absolute;
+            top: 70%;
+            left: 30%;
+        }
+        #often {
+            position: absolute;
+            top: 70%;
+            left: 43%;
+        }
+
+        #stop {
+            position: absolute;
+            top: 70%;
+            left: 56%;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centerscreen">
+        <p>
+            อืม… แล้วตอนนี้คุณยังทำมันอยู่ไหม ? 
+
+
+        </p>
+    </div>
+    <button onclick="Q11always()" class="next3" id="always"> ทำอยู่แล้ว </button>
+    <button onclick="Q11often()" class="next3" id="often">บางครั้งนะ</button>
+    <button onclick="Q11stop()" class="next3" id="stop">เลิกแล้วล่ะ</button>
+    <script>
+        function Q11always() {
+            var Q11 = "ทำอยู่แล้ว";
+            sessionStorage.setItem('q11',Q11);
+
+            location.replace('/page26.html');
+        }
+        function Q11often() {
+            var Q11 = "บางครั้งนะ";
+            sessionStorage.setItem('q11',Q11);
+
+            location.replace('/page26.html');
+        }
+        function Q11stop() {
+            var Q11 = "เลิกแล้วล่ะ";
+            sessionStorage.setItem('q11',Q11);
+
+            location.replace('/page26.html');
+        }
+    </script>
+</body>
+
+</html> 
