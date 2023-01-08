@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TM84737769
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(/qna2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        p{
+            color: black;
+        }
+        #yes {
+            position: absolute;
+            top: 70%;
+            left: 35%;
+        }
+        #no {
+            position: absolute;
+            top: 70%;
+            left: 55%;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="centerscreen">
+        
+        <p>
+            นอกจากนี้พอของหายเด็กชายก็มักจะคิดว่า <br>
+มีคนขโมยมันไปหรือซ่อนมันเอาไว้เสมอ<br>
+คุณคิดแบบนี้บ่อยรึเปล่า ?
+
+        </p>
+    </div>
+    <button onclick="Q15yes()" class="next3" id="yes">ใช่</button>
+    <button onclick="Q15no()" class="next3" id="no">ไม่ใช่</button>
+    <script>
+        function Q15yes() {
+            var Q15 = "ใช่";
+            sessionStorage.setItem('q15',Q15);
+
+            location.replace('/page33.html');
+        }
+        function Q15no() {
+            var Q15 = "ไม่ใช่";
+            sessionStorage.setItem('q15',Q15);
+
+            location.replace('/page33.html');
+        }
+    </script>
+</body>
+
+</html>
